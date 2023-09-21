@@ -1,3 +1,5 @@
+###ROZWIĄZANE
+
 # Hiper-prosta apka TODO-list
 
 ## Co tu jest grane?

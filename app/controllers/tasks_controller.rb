@@ -3,6 +3,7 @@ class TasksController < ApplicationController
 
   def index
     @tasks = Task.all
+    @tasks = Task.order(deadline: :asc) #wyswietlanie wzgledem deadline
   end
 
   def new
@@ -31,6 +32,6 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:description)
+    params.require(:task).permit(:title, :description, :deadline) #naprawione
   end
 end
